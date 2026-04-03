@@ -8,6 +8,6 @@ import java.time.LocalDateTime;
 public record UserCreatedEvent(
         String userId,
         String email,
-        String name,
-        LocalDateTime createdAt
+        String name
+//        LocalDateTime createdAt
 ) {}

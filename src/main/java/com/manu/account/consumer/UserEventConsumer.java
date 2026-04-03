@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 public class UserEventConsumer {
     private final AccountService accountService;
 
-    @KafkaListener(topics = "user-cerated-event", groupId = "account-group")
+    @KafkaListener(topics = "user-created-event", groupId = "account-group")
     public void consume(UserCreatedEvent event) {
         log.info("Received event for user: {}", event.userId());
 

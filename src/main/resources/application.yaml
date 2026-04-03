@@ -1,9 +1,12 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: account
 
   datasource:
-    url: jdbc:postgresql://postgres:5432/manu-account
+    url: jdbc:postgresql://postgres:5432/manu_account
     username: postgres
     password: root
 
@@ -13,7 +16,6 @@ spring:
 
   kafka:
     bootstrap-servers: kafka:9092
-
     consumer:
       group-id: account-group
       auto-offset-reset: earliest
